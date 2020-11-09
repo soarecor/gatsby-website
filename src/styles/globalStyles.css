@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,MONO@-15..0,300..900,0..1,0..1&display=swap");
+
+
+
+:root {
+  --sidebarBg: rgb(227, 221, 209);
+  --contentBg: #edebdf;
+  --fontPrimary: #281102;
+  --fontSecondary: #8f645f;
+  /* --linkPrimary: #72f1b8; */
+  --linkPrimary: var(--fontSecondary);
+  --accentPrimary: #A29082;
+  --accentSecondary: #fede5d;
+  --other: #f97e72;
+  --mono: "MONO" 1;
+  --casl: "CASL" 0;
+  --wght: "wght" 200;
+  --slnt: "slnt" 0;
+  --CRSV: "CRSV" -15;
+  --variableFontFamily: "Recursive", monospace;
+  }
