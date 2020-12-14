@@ -44,6 +44,7 @@ const WorkItem = styled.div`
   }
   .description {
     line-height: 1.5rem;
+    font-size: 1rem;
   }
 `
 

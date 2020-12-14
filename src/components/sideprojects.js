@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import {projectItems} from "../content/content"
-
+import { devices  } from "./base"
 
 const ProjectItem = styled.div`
     max-width: 900px;
@@ -14,22 +14,26 @@ const ProjectItem = styled.div`
   }
   .name {
     color: var(--fontSecondary);
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   --slnt: "slnt" 0;
   --wght: "wght" 400;
   --mono: "MONO" 1;
+  @media ${devices.tablet} {
+    font-size: 1.5rem;
+  }
   }
   .role{
     font-size: 1rem;
     line-height: 1.8rem;
   --slnt: "slnt" 0;
   --wght: "wght" 200;
-  --mono: "MONO" 1;
+  --mono: "MONO" 1;b
   }
   .description {
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+    font-size: 1rem;
   --slnt: "slnt" -9;
   --wght: "wght" 360;
   --mono: "MONO" 1;

@@ -19,7 +19,7 @@ const TwoColumnGrid = styled.div`
 
 const Main = styled.div`
   display: flex;
-
+  font-size: 14px;
   padding: 0;
   overflow-y: scroll auto;
   height: inherit;

@@ -39,7 +39,7 @@ const BigP = styled.span`
     display:block;
     color: var(--accentPrimary);
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     --mono: "MONO" 0;
   --casl: "CASL" 0;
   --wght: "wght" 348;
@@ -51,7 +51,7 @@ const SmallDiv = styled.div`
     margin-bottom: 1rem;
     line-height: 1.8rem;
     span {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--accentPrimary);
         --wght: "wght" 390;
         --slnt: "slnt" -3;
@@ -61,8 +61,8 @@ const SmallDiv = styled.div`
         font-size: 1rem;
         color: var(--fontPrimary);
         --wght: "wght" 290;
-        --slnt: "slnt" -3;
         --CRSV: "CRSV" 1;
+        --slnt: "slnt" 0;
         --CASL: "CASL" 1;
     }
 `
@@ -80,7 +80,7 @@ const About = () => {
         <Article>      
           <BigP>Hey!</BigP>
           <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
-          <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, people person, lifelong learner, sustainability advocate, futurist, electrical engineer .... <span className="sidenote">(Really trying to fit it all in here, but seriously - let's grab a coffee post covid)</span>
+          <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist, wannabe ux reseacher, electrical engineer .... <span className="sidenote">(Really trying to fit it all in here, but seriously - let's grab a coffee post covid)</span>
 </SmallDiv>
   <SmallDiv>  I’m a third culture kid, fortunate to have been educated at McMaster University  and Sheridan College. My unique cultural experiences have enabled me to have a global insight into product usability. I try to apply this by building and advocating for experiences that are universally usable across various demographics. 
 </SmallDiv>
