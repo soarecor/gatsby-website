@@ -2,7 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import { Main,  devices  } from "./base"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import {Triangles} from "./sketches/triangles"
+import {Stars} from "./sketches/stars"
+import {Circle} from "./sketches/circle"
+import {Web} from "./sketches/webgl"
+import {Grad} from "./sketches/gradient"
+
+
 
 export const query = graphql`
   query {
@@ -67,27 +73,13 @@ const SmallDiv = styled.div`
     }
 `
 
-const About = () => {
+
+const Paint = () => {
     const data = useStaticQuery(query)
-    return (
-      <Main>
-        <ImageContainer>
-          <Image
-            fluid={data.fileName.childImageSharp.fluid}
-            alt="stick man"
-          />
-        </ImageContainer>
-        <Article>      
-          <BigP>Hey!</BigP>
-          <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
-          <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist, wannabe ux reseacher, electrical engineer .... <span className="sidenote">(Really trying to fit it all in here, but seriously - let's grab a coffee post covid)</span>
-</SmallDiv>
-  <SmallDiv>  I’m a third culture kid, fortunate to have been educated at McMaster University  and Sheridan College. My unique cultural experiences have enabled me to have a global insight into product usability. I try to apply this by building and advocating for experiences that are universally usable across various demographics. 
-</SmallDiv>
-  </Article>
-      </Main>
-    )
+      return (
+            <Grad />
+      )
   }
   
-  export default About
+  export default Paint
   
