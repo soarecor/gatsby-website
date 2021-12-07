@@ -16,12 +16,12 @@ export const query = graphql`
   }
 `
 const ImageContainer = styled.div`
-  max-width: 50px;
-  width: 50px;
+  max-width: 140px;
+  width: 140px;
   justify-self: center;
   @media ${devices.tablet} {
-    width: 140px;
-    max-width: 140px;
+    width: 225px;
+    max-width: 225px;
   }
 `
 
@@ -82,7 +82,7 @@ const About = () => {
           <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
           <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist, wannabe ux reseacher, electrical engineer .... <span className="sidenote">(Really trying to fit it all in here, but seriously - let's grab a coffee post covid)</span>
 </SmallDiv>
-  <SmallDiv>  I’m a third culture kid, fortunate to have been educated at McMaster University  and Sheridan College. My unique cultural experiences have enabled me to have a global insight into product usability. I try to apply this by building and advocating for experiences that are universally usable across various demographics. 
+  <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to guage product usability on a global level. I try to apply this by building and advocating for experiences that are universally usable across various demographics. 
 </SmallDiv>
   </Article>
       </Main>

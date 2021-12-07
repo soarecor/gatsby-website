@@ -19,3 +19,7 @@
   --CRSV: "CRSV" -15;
   --variableFontFamily: "Recursive", monospace;
   }
+
+  .canvas{
+    display: none;
+  }

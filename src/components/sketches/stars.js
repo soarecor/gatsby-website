@@ -4,7 +4,7 @@ import Sketch from 'react-p5'
 
 export const Stars = () => {
     const setup = (p5) => {
-        p5.createCanvas(1000, 500)
+        p5.createCanvas(800, 420)
       }
 
       const draw = p5 => {
@@ -29,5 +29,5 @@ export const Stars = () => {
           p5.endShape(p5.CLOSE);
       }
       
-      return <Sketch setup={setup} draw={draw} />
+      return <Sketch class="canvas" setup={setup} draw={draw} />
   }

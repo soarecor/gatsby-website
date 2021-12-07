@@ -81,6 +81,14 @@ const NavLink = styled(StyledLink)`
   &.isActive {
     color: var(--fontPrimary);
   }
+  &.isCreate {
+    @media ${devices.mobileS} {
+      display: none;
+    }
+    @media ${devices.laptop} {
+      display: block;
+    }
+  }
 `
 
 const HamburgerMenu = styled.div`
@@ -127,6 +135,8 @@ const Sidebar = ({ siteTitle }) => {
     typeof window !== "undefined" ? window.location.pathname : "/"
   const mobilePath = pathName === "/" ? "MENU" : pathName.replace(/\//g, '');
   const isCurrentRoute = routeName => routeName === pathName && "isActive"
+  const isCreate = (routeName) => routeName === 'create' && " isCreate"
+
 return (
     <>
     <HamburgerMenu> 
@@ -141,7 +151,7 @@ return (
           {navItems.map((navItem, index) => (
             <NavLink
               key={index}
-              className={isCurrentRoute(navItem.path)}
+              className={isCurrentRoute(navItem.path) + isCreate(navItem.label)} 
               to={navItem.path}
             >
               {navItem.label}

@@ -6,11 +6,9 @@ import { SingleColumn, SingleColumnMain } from "../components/base"
 const Creations = () => {
   return (
         <Layout>
-          <SingleColumnMain>
-            <SingleColumn>
+            <SingleColumnMain>
               <Paint />
-            </SingleColumn>
-          </SingleColumnMain>
+            </SingleColumnMain>
         </Layout>
   )
 }

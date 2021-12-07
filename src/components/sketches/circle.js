@@ -4,7 +4,7 @@ import Sketch from 'react-p5'
 
 export const Circle = () => {
     const setup = (p5) => {
-        p5.createCanvas(1000, 500)
+        p5.createCanvas(800, 420)
       }
 
       const draw = p5 => {
@@ -20,5 +20,5 @@ export const Circle = () => {
           p5.circle(p5.mouseX, p5.mouseY, 50)
       }
       
-      return <Sketch setup={setup} draw={draw} />
+      return <Sketch class="canvas" setup={setup} draw={draw} />
   }
