@@ -131,8 +131,9 @@ const Button = styled.button`
 
 const Sidebar = ({ siteTitle }) => {
   const [showSidebarOnMobile, setShowSidebarOnMobile] = useState(false)
+  const isBrowser = () => typeof window !== "undefined"
   const pathName =
-    typeof window !== "undefined" ? window.location.pathname : "/"
+    typeof window !== "undefined" ? isBrowser() && window.location.pathname : "/"
   const mobilePath = pathName === "/" ? "MENU" : pathName.replace(/\//g, '');
   const isCurrentRoute = routeName => routeName === pathName && "isActive "
   const isCreate = (routeName) => routeName === 'create' && " isCreate"
