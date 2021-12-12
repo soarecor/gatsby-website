@@ -134,7 +134,7 @@ const Sidebar = ({ siteTitle }) => {
   const pathName =
     typeof window !== "undefined" ? window.location.pathname : "/"
   const mobilePath = pathName === "/" ? "MENU" : pathName.replace(/\//g, '');
-  const isCurrentRoute = routeName => routeName === pathName && "isActive"
+  const isCurrentRoute = routeName => routeName === pathName && "isActive "
   const isCreate = (routeName) => routeName === 'create' && " isCreate"
 
 return (

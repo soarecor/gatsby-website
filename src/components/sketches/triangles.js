@@ -5,7 +5,7 @@ import Sketch from 'react-p5'
 export const Triangles = () => {
     const setup = (p5) => {
       p5.noStroke()
-        p5.createCanvas(800, 420)
+      const ctx = p5.createCanvas(800, 420)
       }
 
       const draw = p5 => {
