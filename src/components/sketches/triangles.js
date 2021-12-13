@@ -1,5 +1,5 @@
 import React from "react"
-import Sketch from 'react-p5'
+import {loadableP5 as Sketch} from './loadable'
 
 
 export const Triangles = () => {

@@ -15,6 +15,7 @@
   "author": "Cornell Soares",
   "license": "0BSD",
   "dependencies": {
+    "@loadable/component": "^5.15.2",
     "gatsby": "^3.0.0",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.1",
