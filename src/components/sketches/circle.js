@@ -3,8 +3,9 @@ import {loadableP5 as Sketch} from './loadable'
 
 
 export const Circle = () => {
-    const setup = (p5) => {
-        p5.createCanvas(800, 420)
+  let cnv
+    const setup = (p5, canvasParentRef) => {
+         cnv = p5.createCanvas(800, 420).parent(canvasParentRef)
       }
 
       const draw = p5 => {
@@ -17,6 +18,7 @@ export const Circle = () => {
             let col = p5.color(rand1, rand2, rand3 )
             p5.fill(col);
           }
+          cnv.drawingContext.fillStyle = '';
           p5.circle(p5.mouseX, p5.mouseY, 50)
       }
       

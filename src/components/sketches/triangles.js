@@ -3,9 +3,10 @@ import {loadableP5 as Sketch} from './loadable'
 
 
 export const Triangles = () => {
-    const setup = (p5) => {
-      p5.noStroke()
-      const ctx = p5.createCanvas(800, 420)
+  let cnv
+
+    const setup = (p5, canvasParentRef) => {
+        cnv = p5.createCanvas(800, 420).parent(canvasParentRef)
       }
 
       const draw = p5 => {
@@ -26,6 +27,8 @@ export const Triangles = () => {
           p5.vertex(p5.mouseX, 75);
           p5.vertex(p5.mouseY, 20);
           p5.endShape();
+
+          cnv.drawingContext.fillStyle = '';
       }
       
       return <Sketch class="canvas" setup={setup} draw={draw} />

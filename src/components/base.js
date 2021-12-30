@@ -56,6 +56,32 @@ export const SingleColumnMain = styled(Main)`
   }
 `
 
+export const CreatePage = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--fontPrimary);
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* @media ${devices.tablet} {
+    padding: 2rem;
+  }
+
+  @media ${devices.laptop} {
+    grid-template-columns: 30% 1fr;
+    margin: 0;
+  } */
+
+  .padded-bottom {
+    margin-bottom: 2rem;
+  }
+`
+
+export const CreatePageSection = styled.div`
+  height: fit-content;
+`
+
 export const SingleColumn = styled.div`
   display:flex;
   flex-direction: column;

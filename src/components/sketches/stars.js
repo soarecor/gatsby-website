@@ -3,8 +3,10 @@ import {loadableP5 as Sketch} from './loadable'
 
 
 export const Stars = () => {
-    const setup = (p5) => {
-        p5.createCanvas(800, 420)
+  let cnv
+
+    const setup = (p5, canvasParentRef) => {
+        cnv = p5.createCanvas(800, 420).parent(canvasParentRef)
       }
 
       const draw = p5 => {
@@ -27,6 +29,7 @@ export const Stars = () => {
           p5.vertex(200, p5.mouseY);
           p5.vertex(p5.mouseX, 200);
           p5.endShape(p5.CLOSE);
+          cnv.drawingContext.fillStyle = '';
       }
       
       return <Sketch class="canvas" setup={setup} draw={draw} />

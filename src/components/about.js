@@ -6,7 +6,7 @@ import Image from "gatsby-image"
 
 export const query = graphql`
   query {
-    fileName: file(relativePath: { eq: "Jesse.png" }) {
+    fileName: file(relativePath: { eq: "Sir.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
@@ -80,9 +80,9 @@ const About = () => {
         <Article>      
           <BigP>Hey!</BigP>
           <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
-          <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist, wannabe ux reseacher, electrical engineer .... <span className="sidenote">(Really trying to fit it all in here, but seriously - let's grab a coffee post covid)</span>
+          <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist and ux enthusiast.
 </SmallDiv>
-  <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to guage product usability on a global level. I try to apply this by building and advocating for experiences that are universally usable across various demographics. 
+  <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
 </SmallDiv>
   </Article>
       </Main>

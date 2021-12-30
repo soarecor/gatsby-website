@@ -11,7 +11,7 @@ export const workItems = [
   link:"https://ukko.ag/",
   title: "Software Developer",
   date: "December 2019 - Present",
-  description: "I develop web applications and interface with numerous internal and external stakeholders to deliver products consumed by the agriculture industry. I've also had the opportunity to explore paths such as Operations and Release management."
+  description: "Using the Vue JS ecosystem, I develop web applications and interface with numerous internal and external stakeholders to deliver products consumed by the agriculture industry. I've also had the opportunity to explore paths such as Operations and Release management."
 },
 { name: "Engineering.com",
   link:"https://new.engineering.com/",

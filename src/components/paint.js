@@ -11,6 +11,7 @@ const FlexContainer =styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+margin-bottom: 2rem;
 `
 
 const FlexButton = styled.span`
@@ -30,7 +31,7 @@ const FlexButton = styled.span`
 const SmallDiv = styled.div`
     margin-bottom: 1rem;
     line-height: 1.8rem;
-    margin: 3rem 0.5rem 0 0.5rem;
+    margin: 1rem 0.5rem;
     font-size: 1rem;
     span {
         font-size: 1.5rem;
