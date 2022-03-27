@@ -6,6 +6,8 @@ import {Triangles} from "./sketches/triangles" //himalaya
 import {Stars} from "./sketches/stars" //infrared
 import {Circle} from "./sketches/circle"  //kelp
 import {Grad} from "./sketches/gradient" //Sun Coral
+// import {Web} from "./sketches/webgl" //Sun Coral
+
 
 const FlexContainer =styled.div`
 display: flex;
