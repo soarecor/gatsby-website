@@ -5,13 +5,13 @@ import { CreatePageSection, CreatePage } from "../components/base"
 
 const Creations = () => {
   return (
-        <Layout>
-            <CreatePage>
-              <CreatePageSection>
-                <Paint />
-              </CreatePageSection>
-            </CreatePage>
-        </Layout>
+    <Layout>
+        <CreatePage>
+          <CreatePageSection>
+            <Paint />
+          </CreatePageSection>
+        </CreatePage>
+    </Layout>
   )
 }
 

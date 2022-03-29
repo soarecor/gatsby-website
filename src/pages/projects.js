@@ -5,13 +5,13 @@ import { SingleColumn, SingleColumnMain } from "../components/base"
 
 const Projects = () => {
   return (
-        <Layout>
-          <SingleColumnMain>
-            <SingleColumn>
-              <SideProjects/>
-            </SingleColumn>
-          </SingleColumnMain>
-        </Layout>
+    <Layout>
+      <SingleColumnMain>
+        <SingleColumn>
+          <SideProjects/>
+        </SingleColumn>
+      </SingleColumnMain>
+    </Layout>
   )
 }
 

@@ -5,13 +5,13 @@ import { SingleColumn, SingleColumnMain } from "../components/base"
 
 const WorkPage = () => {
   return (
-        <Layout>
-          <SingleColumnMain>
-            <SingleColumn>
-              <Experience/>
-            </SingleColumn>
-          </SingleColumnMain>
-        </Layout>
+    <Layout>
+      <SingleColumnMain>
+        <SingleColumn>
+          <Experience/>
+        </SingleColumn>
+      </SingleColumnMain>
+    </Layout>
   )
 }
 
