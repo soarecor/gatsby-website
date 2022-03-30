@@ -35,8 +35,7 @@ const Article = styled.p`
   --CRSV: "CRSV" 0.5;
 `
 
-const BigP = styled.span`
-    display:block;
+const BigP = styled.div`
     color: var(--accentPrimary);
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -70,6 +69,7 @@ const SmallDiv = styled.div`
 const About = () => {
     const data = useStaticQuery(query)
     return (
+      <>
       <Main>
         <ImageContainer>
           <Image
@@ -81,11 +81,12 @@ const About = () => {
           <BigP>Hey!</BigP>
           <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
           <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist and ux enthusiast.
-</SmallDiv>
-  <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
-</SmallDiv>
-  </Article>
+          </SmallDiv>
+            <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
+          </SmallDiv>
+        </Article>
       </Main>
+      </>
     )
   }
   

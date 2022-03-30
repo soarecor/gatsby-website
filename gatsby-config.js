@@ -5,7 +5,7 @@ siteMetadata: {
     title: `Cornell Soares`,
     description: `Developer`,
     author: `@cornellsoares`,
-    url: "https://cornellsoares.com"
+    url: "http://cornellsoares.com"
     },
     plugins: [
       {
