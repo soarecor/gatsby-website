@@ -8,6 +8,8 @@ siteMetadata: {
     url: "http://cornellsoares.com"
     },
     plugins: [
+      `gatsby-plugin-styled-components`,
+      
       {
         resolve: `gatsby-source-filesystem`,
         options: {

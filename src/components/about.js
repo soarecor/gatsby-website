@@ -70,22 +70,22 @@ const About = () => {
     const data = useStaticQuery(query)
     return (
       <>
-      <Main>
-        <ImageContainer>
-          <Image
-            fluid={data.fileName.childImageSharp.fluid}
-            alt="stick man"
-          />
-        </ImageContainer>
-        <Article>      
-          <BigP>Hey!</BigP>
-          <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
-          <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist and ux enthusiast.
-          </SmallDiv>
-            <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
-          </SmallDiv>
-        </Article>
-      </Main>
+        <Main>
+          <ImageContainer>
+            <Image
+              fluid={data.fileName.childImageSharp.fluid}
+              alt="stick man"
+            />
+          </ImageContainer>
+          <Article>      
+            <BigP>Hey!</BigP>
+            <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
+            <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist and ux enthusiast.
+            </SmallDiv>
+              <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
+            </SmallDiv>
+          </Article>
+        </Main>
       </>
     )
   }

@@ -28,7 +28,7 @@ const ProjectItem = styled.div`
     line-height: 1.8rem;
   --slnt: "slnt" 0;
   --wght: "wght" 200;
-  --mono: "MONO" 1;b
+  --mono: "MONO" 1;
   }
   .description {
     line-height: 1.5rem;
@@ -43,14 +43,14 @@ const ProjectItem = styled.div`
 const SideProjects = () => {
 
 return projectItems.map( (item, index) => {
-           return (
-               <ProjectItem>  
-                    <a href={item.link}> <div className="name">{item.name}</div></a>
-                    <div className="flex"><span className="description">{item.description}</span></div>         
-                    <div className="role">{item.role}</div> 
-               </ProjectItem>
-           )
-        })
+      return (
+          <ProjectItem>  
+              <a href={item.link}> <div className="name">{item.name}</div></a>
+              <div className="flex"><span className="description">{item.description}</span></div>         
+              <div className="role">{item.role}</div> 
+          </ProjectItem>
+      )
+  })
 }
 
 export default SideProjects

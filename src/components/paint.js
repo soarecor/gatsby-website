@@ -54,14 +54,15 @@ const SmallDiv = styled.div`
 
 const Paint = () => {
     const [selectedPaint, setPaint] = useState('Himalaya')
+    // selectedPaint -> reactive value; setPaint -> setter
     let paints = ['Himalaya', 'Infrared', 'Sun Coral', 'Kelp', ]
 
-    const isCurrentPaint = (paintName) => paintName === selectedPaint && " isSelected"
+    const isCurrentPaint = (paint) => paint === selectedPaint
       return (
         <>
         <SmallDiv className="sidenote">Choose a canvas and use your mouse to draw in the blank space below</SmallDiv>
         <FlexContainer>
-        {paints.map((paint, index) => <FlexButton  key={index} className={isCurrentPaint(paint)} onClick={()=>setPaint(paint)}> {paint}</FlexButton>)}
+        {paints.map((paint, index) => <FlexButton  key={index} className={`${isCurrentPaint(paint) ? 'isSelected' : ''}`} onClick={()=>setPaint(paint)}> {paint}</FlexButton>)}
         </FlexContainer>
             {
                 selectedPaint === 'Himalaya' ? < Triangles /> :

@@ -25,6 +25,7 @@ export const devices = {
 export const Main = styled.main`
   display: grid;
   grid-template-columns: 1fr;
+  /* border: 10px solid blue; */
   margin: 1rem 0.5rem;
   color: var(--fontPrimary);
   max-width: 1440px;

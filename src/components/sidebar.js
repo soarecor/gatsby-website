@@ -7,6 +7,7 @@ import { navItems } from "../content/content"
 const Aside = styled.aside`
   display: none;
   grid-template: 1fr;
+  /* border: 10px solid red; */
   justify-content: space-between;
   background: var(--sidebarBg);
   padding: 2rem;

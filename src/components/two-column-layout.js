@@ -8,6 +8,7 @@ const TwoColumnGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content auto;
+  /* border: 5px solid pink; */
   min-height: 100vh;
   width: 100vw;
   background-color: var(--contentBg);
