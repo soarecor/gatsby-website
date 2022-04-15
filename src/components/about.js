@@ -17,8 +17,8 @@ export const query = graphql`
   }
 `
 const ImageContainer = styled.div`
-  max-width: 140px;
-  width: 140px;
+  max-width: 250px;
+  width: 250px;
   justify-self: center;
   position: relative;
   @media ${devices.tablet} {
@@ -71,11 +71,14 @@ const SmallDiv = styled.div`
 const NftLink = styled(StyledLink)`
   position: absolute;
   bottom: -1.5rem;
-  transform: translate(50%);
+  transform: translate(70%);
   &:hover,
   &:focus,
   &.isActive {
     color: var(--fontPrimary);
+  }
+  @media ${devices.tablet} {
+    transform: translate(55%);
   }
 `
 
