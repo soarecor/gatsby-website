@@ -49,7 +49,6 @@ export const Main = styled.main`
 `
 
 export const SingleColumnMain = styled(Main)`
-  margin: 0;
   margin: 1rem 0.5rem;
   @media ${devices.laptop} {
     grid-template-columns: 1fr;
@@ -101,7 +100,6 @@ export const StyledLink = styled(Link)`
   --wght: "wght" 400;
   --mono: "MONO" 1;
   padding-top: 3px;
-  text-transform: lowercase;
   transition: all 0.1s ease 0s;
   width: max-content;
 

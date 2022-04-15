@@ -3,10 +3,11 @@ import styled from "styled-components"
 import { Main,  devices  } from "./base"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { StyledLink } from "./base"
 
 export const query = graphql`
   query {
-    fileName: file(relativePath: { eq: "Sir.png" }) {
+    fileName: file(relativePath: { eq: "dank.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
@@ -19,6 +20,7 @@ const ImageContainer = styled.div`
   max-width: 140px;
   width: 140px;
   justify-self: center;
+  position: relative;
   @media ${devices.tablet} {
     width: 225px;
     max-width: 225px;
@@ -66,6 +68,17 @@ const SmallDiv = styled.div`
     }
 `
 
+const NftLink = styled(StyledLink)`
+  position: absolute;
+  bottom: -1.5rem;
+  transform: translate(50%);
+  &:hover,
+  &:focus,
+  &.isActive {
+    color: var(--fontPrimary);
+  }
+`
+
 const About = () => {
     const data = useStaticQuery(query)
     return (
@@ -76,6 +89,7 @@ const About = () => {
               fluid={data.fileName.childImageSharp.fluid}
               alt="stick man"
             />
+            <NftLink to="https://opensea.io/assets/0x1821d56d2f3bc5a5aba6420676a4bbcbccb2f7fd/333" target="_blank"> <span>DANKBOT #334 </span></NftLink>
           </ImageContainer>
           <Article>      
             <BigP>Hey!</BigP>
