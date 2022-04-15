@@ -46,6 +46,13 @@ const WorkItem = styled.div`
     line-height: 1.5rem;
     font-size: 1rem;
   }
+  .pencil {
+    font-size: 2rem;
+    color: var(--fontSecondary);
+  --slnt: "slnt" 0;
+  --wght: "wght" 400;
+  --mono: "MONO" 1;
+  }
 `
 
 const Experience = () => {
@@ -53,9 +60,10 @@ const Experience = () => {
 return workItems.map( (item, index) => {
            return (
                <WorkItem>  
+                 <div className="pencil">&#9999;</div>
                     <div className="flex">
                         <span className="title"> 
-                            {item.title}
+                           {item.title} 
                         </span> 
                         <span className="date">{item.date}</span>
                     </div>         
