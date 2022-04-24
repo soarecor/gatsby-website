@@ -60,7 +60,6 @@ const Experience = () => {
 return workItems.map( (item, index) => {
            return (
                <WorkItem>  
-                 <div className="pencil">&#9999;</div>
                     <div className="flex">
                         <span className="title"> 
                            {item.title} 

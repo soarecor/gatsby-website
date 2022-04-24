@@ -95,7 +95,7 @@ const About = () => {
             <NftLink to="https://opensea.io/assets/0x1821d56d2f3bc5a5aba6420676a4bbcbccb2f7fd/333" target="_blank"> <span>DANKBOT #334 </span></NftLink>
           </ImageContainer>
           <Article>      
-            <BigP>Hey &#10049;</BigP>
+            <BigP>Hey :)</BigP>
             <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
             <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist and ux enthusiast.
             </SmallDiv>

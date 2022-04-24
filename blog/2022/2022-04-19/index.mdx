@@ -1,0 +1,23 @@
+---
+title: Welcome, to my first official post
+date: "2022-04-19"
+description: "Number 1"
+published: true
+---
+
+### At long last, I did it.
+
+I figured out how to get .mdx files rendered here. Initially, I thought about going with a trendy headless CMS, but decided against it. Gatsby can parse .mdx quite painlessly. 
+
+I used a tutorial by James Perkins - https://youtu.be/ujq0DaSa58Y. This tutorial helped setup by blog folder, template and gatsby-node.js file.  
+
+I had to figure out just one missing peice of the puzzle. The `<Link />` component in Gatsby by default routes to the *relative* path. It follows the behaviour of Reach Router - https://reach.tech/router/nesting. Simply put, if I'm currently on the blog/ route and link to another page from here - by default this route will be preceded by /blog.
+
+To solve the problem, I had to move up a directory, where my blog folder currently sits. I added a good ol' `../` before my slug and voila!
+
+```
+<StyledLink to={`../${item.slug}`}> <div className="name">{item.frontmatter.title}</div> </StyledLink>
+```
+
+
+
