@@ -1,0 +1,22 @@
+---
+title: Github PAT
+date: "2022-05-16"
+description: "A quick story on PATs"
+published: true
+---
+
+### What happens when you authenticate your Github account on your Mac, then try using another account..
+
+Long story short, I authenticated my personal Github account to use a work repository. When authenticating for the first time on a new Mac, Mac OS will create a new keychain record with your Github username and PAT as password.
+
+Cool. So I now had to use my work Github account for the repository.
+
+I created a new PAT on my work Github and tried to clone the repo. I got hit with
+```
+    Unauthorized  
+    fatal: Could not read from remote repository.
+```  
+
+This error does not tell you anything useful. After a few minutes, I figured out I had to change the Github keychain record to my work Github username *and* the new PAT I generated. 
+
+
