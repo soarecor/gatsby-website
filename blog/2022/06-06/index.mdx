@@ -1,0 +1,32 @@
+---
+title: Mapbox Pitch at Zoom level
+date: "2022-06-06"
+description: "Mapbox Zoom and Pitch trick"
+published: true
+---
+
+### Is it possible to animate pitch at a certain elevation?
+
+I'm stoked about my new gig at a tree planting company! One of my many tasks was to figure out how to animate the map as the user zooms past a certain elevation. It was was not obvious if Mapbox has a method to query the camera elavation, but they do have something close enough - getZoom()
+
+getZoom() would allow me to find the equivalent of map elevation. Once you reach a certain height, animate the map to pitch to the desired angle. Looks something like this:
+
+```
+const zoomLevel = map.getZoom()
+
+if( zoomLevel > 15) {
+    map.easeTo({
+        pitch: 80,
+        speed: 0.2,
+        curve: 1,
+        duration: 5000,
+        easing(t) {
+        return t;
+        }
+    });
+}
+```  
+
+While zoom level is not elevation, it is good enough. It does the job and can easily be attached to a 'zoom in' or 'zoom out' click handler!
+
+
