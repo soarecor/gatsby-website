@@ -1,0 +1,23 @@
+---
+title: Git push hanging at total
+date: "2022-06-18"
+description: "Git push error"
+published: true
+---
+
+### How do you fix this annoying git push error that hangs at Total
+
+I had to make an urgent change and push up to my remote branch last week. For some context, I had branched off of an existing branch and made my changes there.
+
+I committed my changes and pushed as I usually do. All was well until the *total* line where it froze.
+
+Cool. No biggie. Maybe it was an issue with the remote repository? 
+
+So I tried again - only to have the same problem. I tried closing my iTerm terminal and restarting and making another commit. Nada.
+
+Finally, I resorted to [Stack Overflow](https://stackoverflow.com/questions/15843937/git-push-hangs-after-total-line). Some solutions here suggested increasing the Git buffer size or maybe just waiting. I knew waiting was not an option since my changes were small and changing the Git buffer size seemed a little hacky.
+
+
+I left, came back and rebased from the parent branch after some changes were pushed up. I tried pushing my changes again and this worked!
+
+Moral of the story - if this happens to you, ask a friend to push changes to the remote parent branch and rebase your branch from it. If you do not have a remote parent branch, this will not work.
