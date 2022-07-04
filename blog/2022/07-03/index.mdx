@@ -1,0 +1,21 @@
+---
+title: Yarn Link and Yarn Unlink
+date: "2022-07-03"
+description: "Using Yarn link locally"
+published: true
+---
+
+### Can you make changes to a local dependency, then use these changes on your feature branch?
+
+At my current gig, we have a 'services' repo which the web team uses as a dependency. The services repo connects to the API and presents a nice wrapper for requests.
+For instance, if I want to fetch images for a certain *id* I can conveniently call 
+
+```
+Images.get('{id}')
+```  
+
+The issue I ran into, was the services repo was not up to date with the latest version of the API. The API was on version 5 but the repo was still on version 2. We could not upgrade to v5 without ensuring all breaking changes were handled. This would be a separate ticket by itself.
+
+So, how would I use v5 of the API on my current feature branch?
+
+Enter [Yarn Link](https://classic.yarnpkg.com/en/docs/cli/link). *Yarn Link* let me create a [Simlink](https://en.wikipedia.org/wiki/Symbolic_link) to my local services repo where I made the change to v5. When finished, I ran *yarn unlink*!
