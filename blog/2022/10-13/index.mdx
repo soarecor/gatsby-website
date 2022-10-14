@@ -1,0 +1,23 @@
+---
+title: Cardano Wallet connector
+date: "2022-10-13"
+description: "How to build a Cardano Wallet Connector"
+published: true
+---
+
+### Building a Cardano Wallet connector is easier than it seems
+
+If you have a Cardano wallet extension installed (like Yoroi, Nami or Eternl) it is possible to detect the wallet rather easily.
+All you have to do is check for `window.cardano`. 
+
+To set some sort of standard, the Cardano foundation has documented and launched the [CIP-30](https://cips.cardano.org/cips/cip30/) standard.
+
+Once `window.cardano` is detected (you might have to wait a second), you can easily check if a wallet exists like this
+
+```
+if(window.cardano[{walletName}] !== undefined) {
+    // append to a wallet list or do anything else
+}
+```
+
+Once you have a list of wallets you can call the *enable* function on it but simply `await wallet.enable()`. The [enable](https://cips.cardano.org/cips/cip30/#cardanowalletnameenablepromiseapi) method returns a Promise which acts as an entry point to the contents of the wallet!
