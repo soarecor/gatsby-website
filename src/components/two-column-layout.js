@@ -22,8 +22,8 @@ const Main = styled.div`
   display: flex;
   font-size: 14px;
   padding: 0;
-  overflow-y: scroll auto;
-  height: inherit;
+  overflow-y: scroll;
+  height: 100vh;
   @media ${devices.tablet} {
     min-height: 100vh;
   }

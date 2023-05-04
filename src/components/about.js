@@ -92,7 +92,6 @@ const About = () => {
               fluid={data.fileName.childImageSharp.fluid}
               alt="stick man"
             />
-            <NftLink to="https://opensea.io/assets/0x1821d56d2f3bc5a5aba6420676a4bbcbccb2f7fd/333" target="_blank"> <span>DANKBOT #334 </span></NftLink>
           </ImageContainer>
           <Article>      
             <BigP>Hey :)</BigP>
