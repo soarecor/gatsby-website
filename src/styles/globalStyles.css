@@ -3,13 +3,13 @@
 
 
 :root {
-  --sidebarBg: rgb(227, 221, 209);
-  --contentBg: #edebdf;
+  --sidebarBg: #e9e8e89e;
+  --contentBg: #fefefceb;
   --fontPrimary: #281102;
-  --fontSecondary: #8f645f;
+  --fontSecondary: #464646;
   /* --linkPrimary: #72f1b8; */
   --linkPrimary: var(--fontSecondary);
-  --accentPrimary: #A29082;
+  --accentPrimary: #464646;
   --accentSecondary: #fede5d;
   --other: #f97e72;
   --mono: "MONO" 1;

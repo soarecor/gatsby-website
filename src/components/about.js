@@ -17,8 +17,8 @@ export const query = graphql`
   }
 `
 const ImageContainer = styled.div`
-  max-width: 250px;
-  width: 250px;
+  max-width: 100%;
+  width: 100%;
   justify-self: center;
   position: relative;
   @media ${devices.tablet} {
@@ -30,25 +30,29 @@ const ImageContainer = styled.div`
 const Article = styled.p`
   color: var(--fontPrimary);
   margin-bottom: 0.25rem;
-  --mono: "MONO" 0;
+  --mono: "MONO" .7;
   --casl: "CASL" 0;
   --wght: "wght" 300;
   --slnt: "slnt" 0;
   --CRSV: "CRSV" 0.5;
 `
 
-const BigP = styled.div`
+const BigP = styled.span`
     color: var(--accentPrimary);
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-    --mono: "MONO" 0;
-  --casl: "CASL" 0;
+    font-size: 4rem;
+    --mono: "MONO" 1;
+  --casl: "CASL" 0.5;
   --wght: "wght" 348;
   --slnt: "slnt" 0;
-  --CRSV: "CRSV" 0.5;
+  --CRSV: "CRSV" 1;
+`
+
+const SmallP = styled.span`
+    font-size: 1.2rem;
 `
 const SmallDiv = styled.div`
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 1.8rem;
     span {
@@ -94,11 +98,10 @@ const About = () => {
             />
           </ImageContainer>
           <Article>      
-            <BigP>Hey :)</BigP>
-            <SmallDiv>  Nice to see you at this corner of the internet.</SmallDiv>
-            <SmallDiv>  <span> I’m Cornell </span> - a web developer, problem solver, lifelong learner, sustainability advocate, futurist and ux enthusiast.
+            <BigP>H</BigP><SmallP>ello.</SmallP>
+            <SmallDiv> I’m Cornell - a product-oriented web developer, lifelong learner, sustainability advocate, futurist and ux enthusiast.
             </SmallDiv>
-              <SmallDiv>  I’m a third culture kid, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
+              <SmallDiv>  I’m a third culture individual, educated at McMaster University  and Sheridan College. I use my unique cultural experiences as a lens to gauge product usability on a global level. 
             </SmallDiv>
           </Article>
         </Main>

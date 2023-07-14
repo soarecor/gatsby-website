@@ -44,10 +44,10 @@ const LogoLink = styled(StyledLink)`
   font-size: 0.8rem;
   color: var(--fontPrimary);
   --wght: "wght" 683;
-  --casl: "CASL" 0;
-  --slnt: "slnt" -4;
+--casl: "CASL" 0;
+--slnt: "slnt" -4;
   &:hover {
-    color: var(--fontSecondary);
+    /* color: var(--fontSecondary); */
     text-decoration: none;
     --casl: "CASL" 0;
     --slnt: "slnt" 0;
