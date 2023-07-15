@@ -17,6 +17,7 @@ const Aside = styled.aside`
     align-self: end;
   }
   &.showSidebarOnMobile {
+    padding: 0.25rem 1rem;
     display: grid;
     transition: all 0.2s ease;
   }
@@ -97,7 +98,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 font-size: 1rem;
-padding: 1rem;
+padding: 0.5rem 1rem;
 background-color: var(--sidebarBg);
 max-height: 4rem;
 @media ${devices.tablet} {
@@ -105,7 +106,6 @@ max-height: 4rem;
 }
 `
 const Button = styled.button`
-  height: 100%;
   padding: 1rem;
   cursor: pointer;
   display: flex;
@@ -135,7 +135,7 @@ const Sidebar = ({ siteTitle }) => {
   const isBrowser = () => typeof window !== "undefined"
   const pathName =
     typeof window !== "undefined" ? isBrowser() && window.location.pathname : "/"
-  const mobilePath = pathName === "/" ? "MENU" : pathName.replace(/\//g, '');
+  const mobilePath = pathName === "/" ? "menu" : pathName.replace(/\//g, '');
   const isCurrentRoute = routeName => routeName === pathName && "isActive "
   const isCreate = (routeName) => routeName === 'create' && " isCreate"
 
