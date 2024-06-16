@@ -7,7 +7,7 @@ import { StyledLink } from "./base"
 
 export const query = graphql`
   query {
-    fileName: file(relativePath: { eq: "dank.png" }) {
+    fileName: file(relativePath: { eq: "dank3.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
